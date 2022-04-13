@@ -1,0 +1,2 @@
+language = "nodejs"
+run = "PORT=80 npm run serve"
