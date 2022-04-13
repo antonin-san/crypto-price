@@ -1,4 +1,7 @@
 {
+  "name": "discord-bot-gecko",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",

@@ -1,5 +1,8 @@
 import "reflect-metadata";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 import { dirname, importx } from "@discordx/importer";
 import { Koa } from "@discordx/koa";
 import type { Interaction, Message } from "discord.js";
@@ -68,12 +71,12 @@ async function run() {
   );
 
   // Let's start the bot
-  if (!process.env.BOT_TOKEN) {
-    throw Error("Could not find BOT_TOKEN in your environment");
+  if (!process.env.DISCORD_BOT_TOKEN) {
+    throw Error("Could not find DISCORD_BOT_TOKEN in your environment");
   }
 
   // Log in with your bot token
-  await bot.login(process.env.BOT_TOKEN);
+  await bot.login(process.env.DISCORD_BOT_TOKEN);
 
   // ************* rest api section: start **********
 

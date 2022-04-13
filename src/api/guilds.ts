@@ -9,13 +9,9 @@ export class API {
   index(context: Context): void {
     context.body = `
       <div style="text-align: center">
-        <h1>
-          <a href="https://discord-ts.js.org">discord.ts</a> rest api server example
-        </h1>
-        <p>
-          powered by <a href="https://koajs.com/">koa</a> and
-          <a href="https://www.npmjs.com/package/@discordx/koa">@discordx/koa</a>
-        </p>
+        <h1>Discord Bot Crypto Price</h1>
+        <p><img src="https://img.shields.io/badge/status-up-brightgreen"/></p>
+        <a href="/guilds">Guilds</a>
       </div>
     `;
   }
